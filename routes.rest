@@ -1,0 +1,37 @@
+// LOCALHOST
+### Get all users
+Send request
+GET http://localhost:3000/users
+
+### Get user by ID
+Send request
+GET http://localhost:3000/users/6828d39ed5dddad9c037e9e3
+
+### Create user
+Send request
+POST http://localhost:3000/users HTTP/1.1
+content type: application/json
+
+{
+    "fistName": "Robert",
+    "lastName": "Anthoni",
+    "email": "robert.anthoni@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "06/06/1990"
+}
+
+### PUT user
+PUT http://localhost:3000/users/6828d39ed5dddad9c037e9f3 HTTP/1.1
+content type: application/json
+
+{
+    "fistName": "Anthony",
+    "lastName": "Robertoni",
+    "email": "robertoni.anthony@gmail.com",
+    "favoriteColor": "red",
+    "birthday": "06/06/1991"
+}
+
+### Delete user
+Send Request
+DELETE http://localhost:3000/users/6828d534d5dddad9c037e9e5
